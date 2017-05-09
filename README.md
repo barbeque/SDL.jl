@@ -8,7 +8,7 @@ signatures by hand, but it is a painful process.  [Jasper's
 FFI](https://github.com/o-jasper/julia-ffi.git) will soon handle this
 automatically!)
 
-#Installation
+# Installation
 
 ```julia
 Pkg.add("SDL")
@@ -53,7 +53,7 @@ I suppose [Homebrew](http://mxcl.github.com/homebrew/) (the recommended choice
 from what I hear) or [MacPorts](https://www.macports.org) will be helpful for
 Mac users.
 
-#Usage notes
+# Usage notes
 
 Press 'q' in any of the NeHe examples to quit.
 
@@ -73,7 +73,7 @@ To try a NeHe example (e.g. tutorial 2), do
 require("SDL/Examples/NeHe/tut2/tut2.jl")
 ```
 
-#Loading and using images as OpenGL textures
+# Loading and using images as OpenGL textures
 
 NOTE: Examples with images will not work, unless you have ImageMagick installed on
 your system, since imread depends on it.
@@ -83,7 +83,7 @@ your system, since imread depends on it.
 3. See Examples 6 or greater in the Examples/NeHe directory for the relevant
 	 code
 	 
-#SDL Event Processing
+# SDL Event Processing
 
 Event processing does not follow the conventional C-SDL scheme of calling
 SDL_PollEvents() and friends.  The Julia version of this function is still in
@@ -128,7 +128,7 @@ lastkeycheckTime   = 0
 key_repeatinterval = 75 #ms
 ```
 
-Set key_repeatintreval to your desired keyboard repeat interval in
+Set key_repeatinterval to your desired keyboard repeat interval in
 milliseconds.  I recommend a repeat interval in the range of 50-80ms, but use
 whatever works for your application.
 
@@ -136,7 +136,7 @@ Every one of the SDL NeHe examples has keyboard event processing code, so you
 can find more elaborate examples of event processing (including mouse and
 joystick processing) there.
 
-#Credit
+# Credit
 
 All of the original, foundational work was done by [Jasper den
 Ouden](https://github.com/o-jasper).  He produced the original
